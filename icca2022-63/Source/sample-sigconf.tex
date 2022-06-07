@@ -1,0 +1,620 @@
+%%
+%% This is file `sample-sigconf.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% samples.dtx  (with options: `sigconf')
+%% 
+%% IMPORTANT NOTICE:
+%% 
+%% For the copyright see the source file.
+%% 
+%% Any modified versions of this file must be renamed
+%% with new filenames distinct from sample-sigconf.tex.
+%% 
+%% For distribution of the original source see the terms
+%% for copying and modification in the file samples.dtx.
+%% 
+%% This generated file may be distributed as long as the
+%% original source files, as listed above, are part of the
+%% same distribution. (The sources need not necessarily be
+%% in the same archive or directory.)
+%%
+%% The first command in your LaTeX source must be the \documentclass command.
+\documentclass[sigconf]{acmart}
+% \end{table}
+
+
+%%
+%% \BibTeX command to typeset BibTeX logo in the docs
+\AtBeginDocument{%
+  \providecommand\BibTeX{{%
+    \normalfont B\kern-0.5em{\scshape i\kern-0.25em b}\kern-0.8em\TeX}}}
+
+%% Rights management information.  This information is sent to you
+%% when you complete the rights form.  These commands have SAMPLE
+%% values in them; it is your responsibility as an author to replace
+%% the commands and values with those provided to you when you
+%% complete the rights form.
+\setcopyright{acmcopyright}
+\copyrightyear{2022}
+\acmYear{2022}
+% \acmDOI{10.1145/1122445.1122456}
+\usepackage{graphicx}
+
+%% These commands are for a PROCEEDINGS abstract or paper.
+% \acmConference[2nd International Conference on Computing Advancements,]{}{March 10-12, 2022}{Dhaka, Bangladesh}
+
+\acmConference[ICCA '22,]{2nd International Conference on Computing Advancements,}{March 10-12, 2022}{Dhaka, Bangladesh}
+
+%%
+%% Submission ID.
+%% Use this when submitting an article to a sponsored event. You'll
+%% receive a unique submission ID from the organizers
+%% of the event, and this ID should be used as the parameter to this command.
+%%\acmSubmissionID{123-A56-BU3}
+
+%%
+%% The majority of ACM publications use numbered citations and
+%% references.  The command \citestyle{authoryear} switches to the
+%% "author year" style.
+%%
+%% If you are preparing content for an event
+%% sponsored by ACM SIGGRAPH, you must use the "author year" style of
+%% citations and references.
+%% Uncommenting
+%% the next command will enable that style.
+%%\citestyle{acmauthoryear}
+
+%%
+\copyrightyear{2022}
+\acmYear{2022}
+\setcopyright{acmcopyright}\acmConference[ICCA 2022]{2nd International Conference on Computing Advancements}{March 10--12, 2022}{Dhaka, Bangladesh}
+\acmBooktitle{2nd International Conference on Computing Advancements (ICCA 2022), March 10--12, 2022, Dhaka, Bangladesh}
+\acmPrice{15.00}
+\acmDOI{10.1145/3542954.3543017}
+\acmISBN{978-1-4503-9734-6/22/03}
+
+%% end of the preamble, start of the body of the document source.
+\begin{document}
+
+%%
+%% The "title" command has an optional parameter,
+%% allowing the author to define a "short title" to be used in page headers.
+\title{Predicting skull fractures via CNN with classification algorithms}
+
+%
+% The "author" command and its associated commands are used to define
+% the authors and their affiliations.
+% Of note is the shared affiliation of the first two authors, and the
+% "authornote" and "authornotemark" commands
+% used to denote shared contribution to the research.
+
+\author{Md Moniruzzaman Emon}
+\affiliation{%
+	\institution{Department
+ of Computer Science and Engineering, Shahjalal
+University of Science and Technology}
+% 	\streetaddress{1 Th{\o}rv{\"a}ld Circle}
+	\city{Sylhet}
+	\country{Bangladesh}}
+\email{moniruzzaman5673@gmail.com}
+
+
+\author{ Tareque Rahman Ornob}
+\affiliation{%
+  \institution{Department
+ of Computer Science and Engineering, Shahjalal
+University of Science and Technology}
+%   \streetaddress{1 Th{\o}rv{\"a}ld Circle}
+  \city{Sylhet}
+  \country{Bangladesh}}
+\email{ornob011@gmail.com}
+
+
+\author{Moqsadur Rahman}
+\affiliation{%
+  \institution{Department of Computer Science and Engineering, Shahjalal University of Science and Technology}
+%   \streetaddress{8600 Datapoint Drive}
+  \city{Sylhet}
+  \country{Bangladesh}}
+\email{moqsad-cse@sust.edu}
+
+
+%
+% By default, the full list of authors will be used in the page
+% headers. Often, this list is too long, and will overlap
+% other information printed in the page headers. This command allows
+% the author to define a more concise list
+% of authors' names for this purpose.
+\renewcommand{\shortauthors}{M. M. Emon et al.}
+
+%
+% The abstract is a short summary of the work to be presented in the
+% article.
+\begin{abstract}
+Computer Tomography (CT) images have become quite important to diagnose diseases. CT scan slice contains a vast amount of data that may not be properly examined with the requisite precision and speed using normal visual inspection. A computer-assisted skull fracture classification expert system is needed to assist physicians. Convolutional Neural Networks (CNNs) are the most extensively used deep learning models for image categorization since most often time they outperform other models in terms of accuracy and results. The CNN models were then developed and tested, and several convolutional neural network (CNN) architectures were compared. ResNet50, which was used for feature extraction combined with a gradient boosted decision tree machine learning algorithm to act as a classifier for the categorization of skull fractures from brain CT scans into three fracture categories, had the best overall F1-score of 96\%, Hamming Score of 95\%, Balanced accuracy Score of 94\% \& ROC AUC curve of 96\% for the classification of skull fractures.
+
+\end{abstract}
+
+\begin{CCSXML}
+<ccs2012>
+   <concept>
+       <concept_id>10010147.10010178.10010224.10010245.10010251</concept_id>
+       <concept_desc>Computing methodologies~Object recognition</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010224.10010245</concept_id>
+       <concept_desc>Computing methodologies~Computer vision problems</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178.10010224</concept_id>
+       <concept_desc>Computing methodologies~Computer vision</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147.10010178</concept_id>
+       <concept_desc>Computing methodologies~Artificial intelligence</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+   <concept>
+       <concept_id>10010147</concept_id>
+       <concept_desc>Computing methodologies</concept_desc>
+       <concept_significance>500</concept_significance>
+       </concept>
+ </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Computing methodologies~Object recognition}
+\ccsdesc[500]{Computing methodologies~Computer vision problems}
+\ccsdesc[500]{Computing methodologies~Computer vision}
+\ccsdesc[500]{Computing methodologies~Artificial intelligence}
+\ccsdesc[500]{Computing methodologies}
+
+
+
+
+
+%%
+%% Keywords. The author(s) should pick words that accurately describe
+%% the work being presented. Separate the keywords with commas.
+\keywords{Skull fracture, Deep learning, Convolutional Neural Network, Medical Image Analysis, Computer vision}
+
+%% A "teaser" image appears between the author and affiliation
+%% information and the body of the document, and typically spans the
+%% page.
+%\begin{teaserfigure}
+%  \includegraphics[width=\textwidth]{sampleteaser}
+%  \caption{Seattle Mariners at Spring Training, 2010.}
+%  \Description{Enjoying the baseball game from the third-base
+%  seats. Ichiro Suzuki preparing to bat.}
+%  \label{fig:teaser}
+%\end{teaserfigure}
+
+%%
+%% This command processes the author and affiliation and title
+%% information and builds the first part of the formatted document.
+
+\maketitle
+
+\section{Introduction}
+Because a significant hit or blow to the head might result in a skull fracture as well as a brain injury, it's critical to figure out what kind of brain injury the skull fracture might cause as soon as possible so that the patient can get the care he or she needs. If the fracture occurs over a major blood vessel, significant bleeding may occur inside the brain, so head injury patients with skull fractures have far more intracranial hematomas than those without fractures.\cite{zaki2008automated,liu2008hemorrhage} Classification is a method of identifying the lesion caused by skull fractures\cite{national2007head}. Computed tomography (CT) has become the primary diagnostic tool for suspected skull or brain injuries.CT images and radiology reports, in general, provide more information to a physician, allowing them to make an informed decision. In the typical diagnosis approach, the radiologist examines the image and notes the results, and the physician then chooses a treatment based on the diagnosis. All of this takes a lot of time. 
+A radiologist uses a CT scan to assess whether there is a skull fracture and which category it belongs to. On CT scans, however, the skull fracture has the following characteristics: fractures typically appear as narrow slits, fractures can be seen in a variety of locations and lengths, and a large proportion of fractures are microscopic.
+All of these factors might make manual diagnosis and grading of skull fractures time-consuming and challenging. As a result, it's vital to propose a reliable automated skull fracture categorization and detection system. Skull fractures might be automatically detected and classified, which could aid in the diagnosis of other anomalies in CT scan brain imaging. Furthermore, many hospitals around the world are understaffed, resulting in delays in evaluating CT scan images.
+In the CQ-500 dataset \cite{CQ-500}, their three radiologists couldn't agree on whether a patient's skull was fractured or normal in many situations, much alone classify the fracture as a calvarial fracture or another fracture deterministically. Automatic classification could assist clinicians in a short-staffed hospital in identifying the most critical patients and prioritizing their treatment.
+Information contained in the  Computed  Tomography  (CT)  images is very important for assessing the severity and prognosis of the Classification of skull fracture. Each skull CT scan includes a large number of slices. 
+To give clinicians with suggestions and predictions on diagnostic judgments and treatment planning, highly efficient and automated computational approaches are urgently needed to process and analyze all accessible medical data.
+These facts provide the motivation for this work.
+In addition to detecting fractured or normal cases from CT scan pictures, we provide a model for automated detection of common three skull fractures. These advantages could provide a good platform for retrieving content-based medical images for medical instruction or diagnosis
+\section{Related Works}
+Some approaches for identifying skull fractures have already been proposed.  Shao et al.\cite{shao2003automatic} have focused their efforts on CT brain segmentation for automated skull fracture diagnosis. They proposed utilizing a region-growing approach to segment the brain image and then using the entropy feature to construct guidelines for identifying skull fractures. This strategy has received a lot of positive feedback. Its complexity and performance, on the other hand, can be simplified and improved computationally. Zaki et al.\cite{za20ki09new} used Sobel edge detection technique for the diagnosis of skull fractures.
+Despite the fact that the Sobel edge detection approach is superior in a variety of ways, it does yield some misshaping lines in some cases. It's worth mentioning that this method is incapable of handling large features. Prewitt is a straightforward approach to detect the boundaries based on gradient magnitude. However, when the amplitude of the gradient decreases, the accuracy will almost certainly decrease. Abubacker et al.\cite{abubacker2013approach} used histogram-based thresholding and nearby pixel connection search, presented a simple and fast automatic solution in Digital Imaging and Communications in Medicine (DlCOM) to extract the skull bone and diagnose the fracture. The experimental results for this approach are consistent, with a high detection rate. Chilamkurthy et al.\cite{chilamkurthy2018deep} have developed a deep learning approach for detecting cerebral bleeding and its kinds (intraparenchymal, intraventricular, subdural, extradural, and subarachnoid), as well as calvarial fractures, midline shift, and mass effect. They demonstrated that deep learning systems were capable of doing this task with excellent precision. 
+Emon et al.\cite{Emon_2022} developed a model called SkullNetV1 to classify seven skull fractures. However, SkullNetV1 lacks score in some classes. Kuang et al.\cite{kuang2020skull} have proposed a way for more precisely detecting skull fractures in a short period of time. Skull R-CNN is the name of the proposed approach. Skull R-CNN has fewer false positives than earlier research on skull fracture diagnosis while keeping good sensitivity. Yamada et al.\cite{yamada2016preliminary} developed a unique approach for automatically detecting linear skull fractures on head CT images by recognizing crack lines They used two types of phantoms to do a rudimentary examination. A crack line with a width of 0.35 mm was found in their experiment with a digital phantom.  
+
+All of the methods outlined above totally focused on the skull's local properties. As far as we know, there are just two methods for detecting linear skull fractures automatically. Only one method exists to automate the detection of skull fractures but no one has automated the classification of Linear and Depressed skull fractures with very high accuracy.
+
+
+
+\section{DataSet}
+With respective permission, we collected 142 patients' head CT scan from Medinova Medical Services Ltd.\cite{medinova} and Ibn Sina Hospital Sylhet Limited.\cite{ibnsina} Every CT scan image was in DICOM format, with 512x512 pixels in slice thicknesses of 0.75 mm, 1.0 mm, and 5.0 mm. The amount of 1.0 mm slices was 25678, those were used to construct the dataset. The CT images of all 142 patients were evaluated and annotated by expert radiologists. 
+First, the radiologists divided the dataset into the fracture and normal cases (8628 CT scan slices), then the fractured instances were further categorized of into two categories i.e. Linear Fracture (4578 CT scan slices) and Depressed Fracture (8492 CT scan slices). The paired data (15189 CT scan slices and radiology reports of 107 patients) were used as training sets. The remaining 35 CT scans (6509 CT scan slices) were used as test sets while the associated radiology reports were used to evaluate the predictions. The data distribution between classes was moderately imbalanced.
+\begin{figure}[h]
+  \centering
+  
+  \includegraphics[width=\linewidth]{../supplements/ddd.jpg}
+ 
+  \Description{Data characteristics: Number of CT images and
+radiology reports for training and testing the system.}
+ \caption{Data characteristics. Number of CT images and
+radiology reports for training and testing the system.}
+  \label{Fig.1}
+\end{figure}
+
+\section{Methodology}
+\subsection{Data Pre-processing}
+1 mm DICOM sequence from each DICOM series was extracted automatically. Best DICOM slices were annotated by the respective radiologists. During the preparation of images, several processes were taken.
+Transforming to HU, Removing Noises, Tilt Correction, Cropping Images, and Padding are the steps. Model accuracy improved significantly when these preprocessing techniques were applied to data. We converted our DICOM picture data to Hounsfield Unit form after loading it. Using Rescale Intercept and Rescale Slope headings, we were able to retrieve the HU. Removing noises is critical since the data is better after implementation, allowing us to view it more clearly. Tilt correction is the proposed alignment of the brain picture. When brain CT pictures are tilted, it might cause misalignment in medical applications. It's significant since the model can see all of the data via the same alignment when it's being trained. Cropping an image is required to center the brain image and remove superfluous sections of the image. Additionally, within the overall image, various brain images may be positioned in different locations. We ensured that almost all of the images are in the same area inside the general image by cropping it and adding pads. Each patient’s CT scan picture slices were given a unique ID in a CSV file along with the slice class i.e. Linear Fracture, Depressed Fracture, or normal cases in another column. LabelEncoder was used to transform the string format of the patients’ condition class into a one-row matrix i.e. 0, 1, 2. The encoded matrix was then converted into a hot one encoded matrix by LabelBinarizer. Every CT scan image was stored in a NumPy array. 
+Data was highly imbalanced across the classes as shown in the \hyperref[Fig.2]{Figure 2:}\\
+\textbf{Class=0 (Depressed Fracture), n=5944 (39.134\%)}\\
+\textbf{Class=1 (Linear Fracture), n=3205 (21.101\%)}\\
+\textbf{Class=2 (Not Fractured), n=6040 (39.766\%)}\\
+\begin{figure}[h]
+  \centering
+ 
+  \includegraphics[width=\linewidth]{../supplements/1.data_distribution_before_balancinf.png}
+ 
+  \Description{Data Distribution across the classes before balancing}
+    \caption{Data Distribution across the classes before balancing}
+  \label{Fig.2}
+\end{figure}
+
+
+To tackle this problem, two resampling techniques were implemented, Random oversampling and Random undersampling. Random oversampling involves randomly duplicating examples in the minority class, whereas random undersampling involves randomly deleting examples from the majority class. A pipeline was defined that first oversamples the minority class and under samples the majority class.
+
+After applying this technique, the dataset became balanced as shown in the \hyperref[Fig.3]{Figure 3:}
+
+\textbf{Class=0 (Depressed Fracture), n=6040 (33.333\%)}\\
+\textbf{Class=1 (Linear Fracture), n=6040 (33.333\%)}\\
+\textbf{Class=2 (Not Fractured), n=6040 (33.333\%)}\\
+\begin{figure}[h]
+  \centering
+   
+  \includegraphics[width=\linewidth]{../supplements/2.Data After Balancing.png}
+ 
+  \Description{Data Distribution across the classes after balancing
+}
+\caption{Data Distribution across the classes after balancing
+}
+  \label{Fig.3}
+\end{figure}
+A pie chart is given in \hyperref[Fig.4]{Figure 4} to show the full transformation.
+
+\begin{figure}[h]
+  \centering
+   
+  \includegraphics[width=\linewidth]{../supplements/3.Before and After.png}
+ 
+  \Description{Data Distribution across the classes before & after balancing
+}
+\caption{Data Distribution across the classes before \& after balancing}
+  \label{Fig.4}
+\end{figure}
+\subsection{Data Visualization}
+The estimated (Gaussian) noise standard deviation is 0.02 in our dataset. So, our data is almost noise-free, no other denoising technique is necessary to further denoise the data. To visualize our statement clearly, various noise filtering algorithm was performed on the dataset.
+\begin{figure}[h]
+  \centering
+   
+  \includegraphics[width=\linewidth]{../supplements/4. Noise with Visualize.png}
+ 
+  \Description{Visualization of an original random 2d slice after performing denoising
+
+}
+\caption{Visualization of an original random 2d slice after performing denoising}
+  \label{Fig.5}
+\end{figure}
+
+We can see from \hyperref[Fig.5]{Figure 5} our original data is much clearer than after performing denoising filters.
+\\
+\\
+\subsection{Implementation and Graph}
+From different model-based approaches, we implemented:\\
+\textbf{Convolutional Neural Network (Transfer Learning Based)}\\
+\textbf{Bagging algorithm}\\
+\textbf{Decision Tree}\\
+\textbf{Support Vector Machine}\\
+
+Convolutional Neural Network:\\
+Xception, InceptionV3, ResNet50, and InceptionResNetV2 was our preferred CNN model due to their state-of-the-art architecture. \\
+Every model CNN was imported from TensorFlow and was fine-tuned by: \\
+\begin{itemize}
+  \item Loading weights from available pre-trained models, included with Keras library. 
+  \item Stacking another network for training on top of any layers 
+  \item Inserting a layer in the middle of other layers
+  \item Freezing multiple layers
+  \item Removing multiple layers and inserting a new one in the middle
+\end{itemize}
+Learning Rate was kept low for Nadam, Adam, and SGD, momentum was used to avoid local minimum. Categorical Crossentropy was used as the loss function, the activation function was relu and the activation function in the output layer was softmax. F1-score was chosen as the metric. The dense layer was composed of 128 and 3 units, with l2 kernel regulizer for InceptionV3.
+\\
+\\
+\textbf{Training vs Validation Loss Graphs:}\\
+
+  
+
+Xception:\\
+\begin{figure}[h]
+  \centering
+  
+  \includegraphics[width=\linewidth]{../supplements/5.Xception.png}
+ 
+  \Description{Xception}
+   \caption{Cross Entropy loss of Xception}
+  \label{Fig.6}
+\end{figure}
+Xception performed reasonably well until the 30 epoch. We can see that the validation curve is fluctuating because the validation dataset is quite small compared to the training dataset.\\
+
+\
+\begin{table}[h] 
+
+% \renewcommand{\figurename}{Table}
+  \centering
+  \caption{Xception}
+  \includegraphics[width=\linewidth]{../supplements/xception.png}
+ 
+  \Description{Xception}
+  \label{Tab.1}
+\end{table}
+\\
+% \begin{table}[h] 
+% \caption{This is my table}  
+% \includegraphics[width=\linewidth]{supplements/xception.png}
+% \end{table}
+
+
+% \begin{table}[ht]
+% \begin{center}
+% \caption{Results from multiple models on the testing dataset}
+
+% \setlength{\arrayrulewidth}{0.1mm}
+%  \setlength{\tabcolsep}{9pt}
+% \renewcommand{\arraystretch}{1.5}
+
+% \begin{tabular}{|p{.4cm}|p{0.4cm}|p{0.4cm} |p{0.4cm} |p{0.4cm} |p{0.4cm} |p{0.4cm} |p{0.4cm}|}
+% \hline
+%  Model &this is osmmsdfsjk & & & & & & \\
+% \hline
+%  Xception &F1 Score
+% (micro avg) & & & & & & \\
+
+
+% \hline
+
+% \end{tabular}
+
+% \end{center}
+% \end{table}
+
+% % \label{tab:2}
+
+
+
+
+InceptionV3:\\
+The same result as Xception, but validation loss is less fluctuating.\\
+\begin{figure}[h]
+  \centering
+ 
+  \includegraphics[width=\linewidth]{../supplements/6.inception.png}
+ 
+  \Description{Inceptionv3
+}
+  \caption{Cross Entropy loss of InceptionV3
+}
+  \label{Fig.8}
+\end{figure}
+
+\begin{table}[h]
+  \centering
+   \caption{InceptionV3}
+  \includegraphics[width=\linewidth]{../supplements/Inceptionv3.png}
+ 
+  \Description{InceptionV3}
+  \label{Tab.2}
+\end{table}
+ResNet50:\\
+Among four CNN model, ResNet50 performed best nevertheless not learning at the beginning. In the end, validation and training loss comes closer.\\
+\begin{figure}[h]
+  \centering
+   
+  \includegraphics[width=\linewidth]{../supplements/7.ResNet.png}
+ 
+  \Description{ResNet50
+}
+\caption{Cross Entropy loss of ResNet50
+}
+  \label{Fig.7}
+\end{figure}
+
+\begin{table}[h]
+  \centering
+   \caption{ResNet50}
+  \includegraphics[width=\linewidth]{../supplements/resnet50.png}
+ 
+  \Description{ResNet50}
+  \label{Tab.3}
+\end{table}
+
+InceptionResNetV2:\\
+InceptionResNetV2 took a lot of time to complete training as the parameter is around 54 million. It was trained until epoch 30, but from 25 number epoch it started to fluctuate greatly.\\
+\begin{figure}[h]
+  \centering
+
+  \includegraphics[width=\linewidth]{../supplements/8.Inception_Resnet.png}
+ 
+  \Description{InceptionResNetV2}
+     \caption{Cross Entropy loss of InceptionResNetV2}
+  \label{Tab.4}
+\end{figure}
+
+\begin{table}[h]
+  \centering
+   \caption{InceptionResNetV2}
+  \includegraphics[width=\linewidth]{../supplements/InceptionResNetV2.png}
+ 
+  \Description{InceptionResNetV2}
+  \label{Tab.4}
+\end{table}
+
+\textbf{Bagging algorithm:}\\
+Random forest is a machine learning technique that combines many different decision trees to get a more accurate and reliable forecast. The ideal split for each node is determined using a set of randomly generated candidate variables during the tree-building process. Following trees in the bagging process are not dependent on prior trees, and each one is built separately using a bootstrap sample of the data set. Finally, a simple majority vote is used to make the prediction.
+
+Random Forest Classifier was used with CNN models instead of the dense layer as the Neural Networks will require much more data. 200 trees were used in the forest before taking the maximum voting. The extracted features from CNN were flattened to feed into Random Forest Classifier along with the target variable.\\
+\begin{table}[h]
+  \centering
+   \caption{Bagging algorithm}
+  \includegraphics[width=\linewidth]{../supplements/baggingalgorithm.png}
+ 
+  \Description{Bagging algorithm}
+  \label{Tab.5}
+\end{table}
+\textbf{Decision Tree:}
+XGBoost is a well-known gradient boosting approach (ensemble) that improves the performance and speed of tree-based machine learning algorithms (sequential decision trees). In Ensemble Learning, XGBoost is classified as a boosting strategy. Ensemble learning combines different models into a collection of predictors to improve prediction accuracy. The faults created by prior models are attempted to be repaired by subsequent models by adding weights to the models in the boosting strategy.
+
+XGBoost was used as the classifier along with CNN. 500 trees were used in the XGBoost. 
+\begin{table}[h]
+  \centering
+   \caption{Decision Tree}
+  \includegraphics[width=\linewidth]{../supplements/decission tree.png}
+ 
+  \Description{Decision Tree}
+  \label{Tab.6}
+\end{table}
+
+\textbf{Support Vector Machine}
+The purpose of the Linear SVC (Support Vector Classifier) is to fit the data provided and generate a "best fit" hyperplane that divides or categorizes the data. Following that, we can input some features to the classifier to check what the "predicted" class is after we've obtained the hyperplane. Despite the fact that SVC and Linear SVC are supposed to optimize the same issue, all liblinear estimators penalize the intercept, but libsvm estimators do not. LinearSVC's underlying estimators are liblinear, which penalizes the intercept. SVC makes use of libsvm estimators, which do not. Liblinear estimators are tailored for a linear (special) scenario, hence they converge faster than libsvm on vast amounts of data. This is because the linear kernel is a particular situation that is optimized for in Liblinear but not in Libsvm. The One-vs-All (also known as One-vs-Rest) multiclass reduction is used by LinearSVC, whereas the One-vs-One multiclass reduction is used by SVC. SVC fits N * (N - 1) / 2 models to multi-class classification problems, where N is the number of classes. Linear SVC, on the other hand, only fits N models.
+
+Linear SVC were employed as the classifier for the CNN’s extracted features.
+\begin{table}[h]
+  \centering
+   \caption{Support Vector Machine}
+  \includegraphics[width=\linewidth]{../supplements/svm.png}
+ 
+  \Description{Support Vector Machine}
+  \label{Tab.7}
+\end{table}
+\begin{figure*}[h]
+  \centering
+   
+  \includegraphics[width=\linewidth]{../supplements/1234.jpg}
+ 
+  \Description{Decision Tree}
+  \caption{Model Training Pipeline}
+  \label{Tab.6}
+\end{figure*}
+\subsection{Metric}
+Because there are so many classes to predict, the notion of positive and negative words and associated terms are calculated for each kind in a one vs. rest way, and then the overall levels are averaged. As a result, we chose F1 scores to evaluate all models.
+% \begin{figure*}[h]
+%   \centering
+   
+%   \includegraphics[width=\linewidth]{supplements/1234.jpg}
+ 
+%   \Description{Decision Tree}
+%   \caption{Model Training Pipeline}
+%   \label{Tab.6}
+% \end{figure*}
+
+  TP = True Positive, TN = True Negative, FP = False positive, FN = False Negative
+ 
+\begin{equation}
+\emph{ Accuracy }=\frac{(T P+T N)}{(T P+F P+T N+F N)}
+\end{equation}
+
+		
+\begin{equation}
+\emph{ Precision }=\frac{ TP}{( TP + FP)}
+\end{equation}
+
+\begin{equation}
+\emph{ Recall }=\frac{ TP }{( TP + FN )}
+\end{equation}
+
+
+    \begin{equation}
+    F1=2 * \frac{\text { Precision * Recall }}{\text { Precision + Recall }}
+    \end{equation}
+Balanced Accuracy, Hamming Loss, Hamming Score, ROC AUC, Kappa score, Log Loss were also used to check the model performance.
+\subsection{Algorithmic details of the proposed system }
+We developed a model that comprises ResNet50 and XGBoost. By combining ResNet50 as a pre-trained feature extractor to automatically obtain features from input and XGBoost as a classifier on the top level of the network to provide results, the ResNet50-XGBoost model gives more precise output. All of the ResNet50's feature extraction layers, as well as the feature flattening layer, are kept. The XGBoost model takes the role of the fully connected neural network and performs the classification task using the extracted features. ResNet50 was used to construct feature vectors from raw images, which gives a low-dimensional and noise-resistant manner to represent these images. Images were loaded into a pre-trained ResNet50 to build feature vectors, and the representation for that image in the intermediate layers of the neural network was utilized. At the penultimate layer of the ResNet50 model pre-trained on the ImageNet dataset, our approach extracts representations of given images. XgBoost was utilized in the classification phase to create direct predictions based on the high-level features extracted by ResNet50.
+
+\section{Experimental Environments}
+Ubuntu 20.04.2 LTS was utilized as the operating system. The AMD Ryzen Threadripper 1950X 16-Core Processor was used. The primary memory was 64 GB, and the graphics cards were two GeForce RTX 2080 Ti with 11 GB RAM each. TensorFlow 2.5.0rc2 was used as the deep learning framework.
+\section{Experimental Result}
+The dataset divided into three parts: 50\% training, 20\% validation and 30\% testing. It was made sure no slices from one patient was present in all three dataset. \hyperref[Tab.1]{Table 1}\hyperref[Tab.2]{,2} \hyperref[Tab.3]{,3}\hyperref[Tab.13]{,4} \hyperref[Tab.5]{,5} \hyperref[Tab.6]{,6} \hyperref[Tab.7]{,7} shows a comparison of the most well-known CNN models and CNN with supervised machine learning algorithm’s classification performance in terms of micro average F1 Score, Hamming Score, Hamming Loss, Balanced Accuracy, ROC AUC, Kappa score and Log Loss.
+
+From these 7 tables, we observe that fine tuned ResNet50 combined with XGBoost achieves the highest score in all of the metrics. It is likely because every other CNN model stopped to learn better after 25 epoch, but ResNet50 was still learning quite well at 30th epoch.
+
+ResNet50+XGBoost model’s classwise score is demonstrated in \hyperref[Tab.8]{Table 8}:
+\begin{table}[h]
+  \centering
+   \caption{Classwise Score of Resnet50+XGBoost}
+  \includegraphics[width=\linewidth]{../supplements/XXXXX.png}
+ 
+  \Description{Classwise score of ResNet50+XGBoost}
+  \label{Tab.8}
+\end{table}
+
+It is clear that our experimented model achieves a higher score in all three classes significantly.
+
+
+
+
+\section{Discussion}
+To our knowledge, this is the first research to disclose the development of a system that can distinguish between three types of skull fractures and test it with a small number of samples. To clarify this, \hyperref[tab:9]{Table 9} shows a comparison with existing published reference models vs our proposed work. Radiology reports were employed as ground labels to increase classification performance over CT scan images alone and supervised deep learning architectures for adding auxiliary data during training were presented. The suggested approach was successful in categorizing a CT scan of the head depending on the kind of skull fracture.  Despite having fewer image data than prior classification tests, our model performed wonderfully. Because the extracted features of images by CNN were fed into a powerful gradient boosting (GB) classifier that is an ensemble learning algorithm, which combines the predictions of multiple base learners (usually, each one being a fairly weak performer on its own) to generate one overall prediction for each input/example. This allows it to learn more complex relationships between the features and labels in the training set. This is a solid method when the dataset is very structured. As such, the final ensemble sequence can achieve (nearly) arbitrarily good performance on the training set. According to the outcomes of this investigation, our architecture has the potential to improve classification performance with high accuracy and F1 score. Because we have many more features than examples in our dataset, well-known CNN models with neural networks failed to perform effectively in this challenging multi-class classification task. We had a large number of weights to estimate, but the neural network couldn't since the NN's massive structure couldn't generalize effectively on our small, unbalanced medical dataset, and we required more data to learn such a large number of hidden weights. This is frequent in medical image processing since the design of well-known CNN models was too dense to learn from a small number of images, and they were not pre-trained on medical images. Despite having a higher overall F1-score, our dataset contains fewer Linear Fracture slices. As a result, our model did not perform as well on Linear Fracture as it did on other fractures, demonstrating that even with highly structured data, training with a short dataset by gradient boosters combined with CNN is difficult. Medical image processing software has a lot of capabilities. Medical image analysis software can correctly detect inconsistencies and identify potentially harmful anomalies using Machine Learning methods. These diagnostic technologies can take over some of the most time-consuming processes, allowing clinicians to focus on issues that require immediate treatment. As a result, proper application of AI technology might assist healthcare organizations in providing better and more timely treatment.
+\begin{table}
+\begin{center}
+\caption{Comparative performance of published model vs proposed model}
+
+\setlength{\arrayrulewidth}{0.1mm}
+ \setlength{\tabcolsep}{11pt}
+\renewcommand{\arraystretch}{2.5}
+
+\begin{tabular}{|p{1.3cm}|p{2.5cm}|p{2.2cm}|}
+\hline
+ Paper &Objective  &Score, Metric  \\
+\hline
+Shao and Zhao\cite{shao2003automatic}&Automatically detect if the skull is fractured or not  &100\%, accuracy  \\
+\hline
+Zaki et al.\cite{za20ki09new}&Segment fractured skull from 2D-CT brain image  &95\%, Normalized Euclidean Recall rate  \\
+\hline
+
+Yamada et al.\cite{yamada2016preliminary}&Detection of Linear skull fracture &80\% accuracy for a crack line of width 1.05mm  \\
+\hline
+Chilamkurthy et al. \cite{chilamkurthy2018deep}&Detection of multiple Hemorrhage and skull fracture of only calvaria. &91.11\%, AUC \\
+\hline
+Lee et al. \cite{lee2020classification}&Detection of femur fracture &86.78\%, accuracy  \\
+\hline
+Kuang et al. \cite{kuang2020skull}&Faster detection of skull fracture more accurately  &80\%, precision recall score  \\
+\hline
+Ours&Classification of three skull fractures &96\%, F1-score  \\
+
+
+
+\hline
+
+\end{tabular}
+
+\end{center}
+
+\label{tab:9}
+
+\end{table}
+
+\section{Conclusion}
+Using head CT images, we developed a deep learning method to automatically identify and classify skull fractures. The proposed method for automatically classifying head CT images is very fast and human-level accurate. In contrast to previous research that focused just on detecting skull fractures, our goal was to categorize skull fractures from images into three different class. Our model classifies skull fracture images trained with limited data, so it has the advantages of effective utilization of little training data. We hope that by applying our technique to head CT images, we will be able to automate the head CT scan triage process. Our approach has the potential to make radiologists’ jobs easier. This technique has shown to have a promising future in delivering second opinions to doctors and radiologists. The ongoing enhancement of the algorithm is one of our major areas of focus for future research. To balance the multi-class dataset, other improvements could be done, such as the addition of GAN and SMOTE method.
+
+
+%%
+%% The acknowledgments section is defined using the "acks" environment
+%% (and NOT an unnumbered section). This ensures the proper
+%% identification of the section in the article metadata, and the
+%% consistent spelling of the heading.
+\begin{acks}
+	Syed Md. Shakawath Hossain, Medical Technologist, CT Scan department, Medinova Medical Services Ltd.; Md Sad Udiin Sadik, assistant manager; MD Ismail Hossain, Medical Technologist, CT Scan Department, Ibn Sina Hospital Sylhet Limited; Md Sad Udiin Sadik, assistant manager; MD Ismail Hossain, Medical Technologist, CT Scan department, Ibn They provided the CT brain images utilized in this study with the approval of the appropriate authorities. Dr. Tahmina Sumi of Z. H. Sikder Women's Medical College, Professor Dr. Ashikur Rahman Majumder, HEAD OF THE DEPARTMENT, Department of Radiology \& Imaging of Sylhet MAG Osmani Medical College, and Dr. Sajal Chandra Das of Ibn Sina Hospital Sylhet Limited, along with the respective radiologists, provided additional annotations of CT scan images. We'd also like to thank Sakib Alam Snigdha for letting us use his PC for our preliminary calculations.
+\end{acks}
+%%
+%% The next two lines define the bibliography style to be used, and
+%% the bibliography file.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{sample-base.bib}
+
+%%
+%% If your work has an appendix, this is the place to put it.
+\appendix
+
+\end{document}
+\endinput
+%%
+%% End of file `sample-sigconf.tex'.
